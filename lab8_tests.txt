@@ -1,0 +1,13 @@
+maze, start, end = load_maze("solvable_maze1.csv")
+path = [start]
+solvable = solve_maze(maze, path, end)
+print(solvable)
+
+test_02: (('X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'), ('X', 'O', 'X', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'X', 'O', 'O', 'E'), ('X', 'O', 'O', 'O', 'X', 'O', 'O', 'X', 'X', 'X', 'X', 'X', 'X', 'O', 'O', 'O', 'X', 'X'), ('X', 'X', 'X', 'O', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'), ('X', 'O', 'O', 'O', 'O', 'O', 'X', 'X', 'O', 'O', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'), ('X', 'X', 'X', 'X', 'X', 'O', 'O', 'O', 'O', 'X', 'O', 'O', 'O', 'O', 'O', 'X', 'X', 'X'), ('X', 'X', 'X', 'X', 'X', 'X', 'X', 'O', 'O', 'O', 'O', 'X', 'O', 'X', 'X', 'X', 'X', 'X'), ('X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'S', 'X', 'X', 'X', 'X', 'X'))
+
+test_04: (('X', 'X', 'X', 'X', 'X', 'X', 'S', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'), ('X', 'O', 'X', 'O', 'O', 'O', 'O', 'X', 'O', 'O', 'O', 'O', 'O', 'O', 'X', 'O', 'O', 'X'), ('X', 'O', 'O', 'O', 'X', 'X', 'O', 'O', 'X', 'X', 'X', 'X', 'X', 'O', 'O', 'O', 'X', 'X'), ('X', 'X', 'X', 'O', 'X', 'X', 'X', 'O', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'O', 'X', 'X'), ('X', 'O', 'O', 'O', 'O', 'O', 'X', 'O', 'X', 'O', 'X', 'X', 'X', 'X', 'X', 'O', 'X', 'X'), ('X', 'X', 'X', 'O', 'X', 'O', 'O', 'O', 'X', 'X', 'O', 'O', 'O', 'O', 'O', 'O', 'X', 'X'), ('X', 'X', 'X', 'O', 'X', 'X', 'X', 'X', 'O', 'O', 'O', 'X', 'O', 'X', 'X', 'O', 'X', 'X'), ('X', 'X', 'O', 'O', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'E', 'X', 'X'))
+
+test_01, 03, 05:
+unsolvable1.csv
+solvable1.csv
+solvable2.csv

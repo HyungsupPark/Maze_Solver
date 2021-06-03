@@ -1,0 +1,34 @@
+**s.push()**
+sqr_data=((2,1),{"U":False,"D":False,"R":False,"L":False})
+s=Stack()
+s.push(sqr_data)
+print(s)
+
+**s.pop()**
+sqr_data1=((2,1),{"U":False,"D":False,"R":False,"L":False})
+sqr_data2=((2,2),{"U":False,"D":False,"R":False,"L":False})
+s=Stack()
+s.push(sqr_data1)
+s.push(sqr_data2)
+popped_data=s.pop()
+print(s)
+print("popped data:", popped_data)
+
+**s.peek()**
+s = Stack()
+s.push(((2,1),{"U":False,"D":False,"R":False,"L":False}))
+d = s.peek()
+print(d)
+
+**s.search()**
+s = Stack()
+s.push(((2,1),{"U":False,"D":False,"R":False,"L":False}))
+s.push(((2,2),{"U":False,"D":False,"R":False,"L":False}))
+print(s.search((2,1)))
+print(s.search((4,2)))
+
+**solve_maze()**
+maze, start, end = load_maze("solvable_maze1.csv")
+s, path = solve_maze(maze, start, end)
+s
+print(path)
